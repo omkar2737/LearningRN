@@ -1,2 +1,2 @@
-yarn lint-staged
-yarn test
+#!/usr/bin/env sh
+. "$(dirname "$0")/h"

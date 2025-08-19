@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">demo</string>
+    <string name="StallionProjectId">68a4687a61c3f204f9bdcbc1</string>
+    <string name="StallionAppToken">spb_YEws6UYGUw1bb5PHjlI7Qmp60qFHeEv_Xufs_yjyb7</string>
 </resources>

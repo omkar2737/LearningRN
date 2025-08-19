@@ -6201,6 +6201,11 @@ react-is@^19.1.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-19.1.1.tgz#038ebe313cf18e1fd1235d51c87360eb87f7c36a"
   integrity sha512-tr41fA15Vn8p4X9ntI+yCyeGSf1TlYaY5vlTZfQmeLBrFo3psOPX6HhTDnFNL9uj3EhP0KAQ80cugCl4b4BERA==
 
+react-native-stallion@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-stallion/-/react-native-stallion-2.2.0.tgz#3cb696eb51a359664a63da38f4eec902489d8e2e"
+  integrity sha512-odbXYXxsYTMQLpt1w5J7ZjCgYrvVG+lsRGQrWb1bCgsEB1PA5Vs9BR5WfA4UPjYWcDfeaUyFQvAzGH1Rpj7iCA==
+
 react-native@0.80.2:
   version "0.80.2"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.80.2.tgz#d71b9584ba82c2d691332062fa756f87ec76e2b9"
