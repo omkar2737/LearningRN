@@ -27,9 +27,6 @@ jobs:
       - name: Install deps
         run: yarn install --frozen-lockfile
 
-      - name: Install Android deps
-        run: sudo apt-get install -y openjdk-17-jdk
-
       - name: Build Debug APK
         working-directory: android
         run: ./gradlew assembleDebug --no-daemon
