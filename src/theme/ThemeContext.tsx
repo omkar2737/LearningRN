@@ -1,6 +1,12 @@
 // ThemeContext.tsx
-import React, { createContext, useContext, useMemo, useState } from 'react';
-import { useColorScheme } from 'react-native';
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from 'react';
+import { Appearance, useColorScheme } from 'react-native';
 import { darkTheme, lightTheme } from './index';
 
 type ThemeContextType = {
@@ -18,6 +24,16 @@ export const ThemeProvider = ({ children }) => {
   const toggleTheme = () => setIsDark(prev => !prev);
 
   const theme = isDark ? darkTheme : lightTheme;
+
+  // add listener for color scheme changes
+
+  useEffect(() => {
+    const subscription = Appearance.addChangeListener(({ colorScheme }) => {
+      setIsDark(colorScheme === 'dark');
+    });
+
+    return () => subscription.remove();
+  }, []);
 
   const value = useMemo(
     () => ({

@@ -1,8 +1,9 @@
 import { useMemo } from 'react';
+import { Theme } from '.';
 import { useTheme } from './ThemeContext';
 
 // generic helper
-export function useThemedStyles<T extends (theme: any) => any>(
+export function useThemedStyles<T extends (theme: Theme) => any>(
   createStyles: T,
 ) {
   const { theme } = useTheme();
